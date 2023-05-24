@@ -10,7 +10,6 @@ function App() {
  const {showCartModal}=useSelector(state => state.cartUi);
  const dispatch = useDispatch();
  const {removeCartModal} =  cartUiactions;
-console.log(showCartModal);
 /* To remnove the overflow of body when modal is opened */
  useEffect(() => {
   document.body.style.overflow = showCartModal ? "hidden" : "auto";

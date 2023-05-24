@@ -18,7 +18,6 @@ export const cartSlice = createSlice({
     state.items[existedItemIndex].total += state.items[existedItemIndex].price;
 }
 state.totalQuantity++;
-console.log(state.totalQuantity);
 },
     removeFromCart:(state,action)=>{
         const itemInCartIndex = state.items.findIndex(item=>item.id === action.payload.id);
